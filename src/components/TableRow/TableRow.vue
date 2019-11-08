@@ -4,7 +4,7 @@
     <td>{{ todo.desc }}</td>
     <td>{{ showStatus(todo.status) }}</td>
     <td>
-      <TodoButtons />
+      <TodoButtons v-bind:todo="todo" v-bind:index="index" />
     </td>
   </tr>
 </template>

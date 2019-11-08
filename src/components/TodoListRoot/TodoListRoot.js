@@ -11,5 +11,10 @@ export default {
     return {
       todos: []
     }
+  },
+  mounted () {
+    this.$root.$on('removeTodo', (index) => {
+      this.todos.splice(index, 1)
+    })
   }
 }
