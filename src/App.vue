@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <Root msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Todo list</a>
+    </nav>
+
+    <Root />
   </div>
 </template>
 
 <script>
-import Root from './components/Root.vue'
+import Root from './components/Root/Root.vue'
 
 export default {
   name: 'app',
