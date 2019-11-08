@@ -5,7 +5,7 @@
         <div class="col-md-6">
           <TodoControls v-bind:todos="todos" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <TodoTable v-bind:todos="todos" />
         </div>
       </div>
