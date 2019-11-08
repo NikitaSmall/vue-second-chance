@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <TodoControls />
+          <TodoControls v-bind:todos="todos" />
         </div>
         <div class="col-md-6">
-          <TodoTable />
+          <TodoTable v-bind:todos="todos" />
         </div>
       </div>
     </div>

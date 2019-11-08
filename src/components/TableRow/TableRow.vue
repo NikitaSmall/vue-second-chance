@@ -1,8 +1,8 @@
 <template>
   <tr>
-    <th scope="row">{{ index }}</th>
+    <th scope="row">{{ index+1 }}</th>
     <td>{{ todo.desc }}</td>
-    <td>{{ todo.status }}</td>
+    <td>{{ showStatus(todo.status) }}</td>
     <td>
       <TodoButtons />
     </td>

@@ -8,5 +8,10 @@ export default {
   props: {
     index: Number,
     todo: Object
+  },
+  methods: {
+    showStatus: function (status) {
+      return status ? 'done' : 'incoplete'
+    }
   }
 }

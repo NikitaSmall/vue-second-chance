@@ -4,5 +4,8 @@ export default {
   name: 'TodoTable',
   components: {
     TableRow
+  },
+  props: {
+    todos: Array
   }
 }

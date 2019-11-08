@@ -9,9 +9,12 @@
     </tr>
   </thead>
   <tbody>
-    <TableRow />
-    <TableRow />
-    <TableRow />
+    <TableRow
+      v-for="(todo, index) in todos"
+      v-bind:key="index"
+      v-bind:index="index"
+      v-bind:todo="todo"
+    />
   </tbody>
 </table>
 </template>

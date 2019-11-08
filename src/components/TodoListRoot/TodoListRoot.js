@@ -6,5 +6,10 @@ export default {
   components: {
     TodoControls,
     TodoTable
+  },
+  data: function () {
+    return {
+      todos: []
+    }
   }
 }
