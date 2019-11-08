@@ -1,3 +1,5 @@
+import { ADD_TODO_ACTION } from '../../store/actions'
+
 export default {
   name: 'TodoControls',
   props: {
@@ -17,7 +19,7 @@ export default {
         status: false
       }
 
-      this.todos.push(todo)
+      this.$store.dispatch(ADD_TODO_ACTION, todo)
       this.desc = ''
     }
   }

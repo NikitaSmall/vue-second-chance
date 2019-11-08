@@ -10,9 +10,11 @@
 
 <script>
 import Root from './components/Root/Root.vue'
+import store from './store'
 
 export default {
   name: 'app',
+  store,
   components: {
     Root
   }

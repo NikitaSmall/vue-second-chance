@@ -1,3 +1,5 @@
+import { REMOVE_TODO_ACTION, COMPLETE_TODO_ACTION } from '../../store/actions'
+
 export default {
   name: 'TodoButtons',
   props: {
@@ -7,13 +9,11 @@ export default {
   methods: {
     complete: function (event) {
       event.preventDefault()
-
-      this.todo.status = true
+      this.$store.dispatch(COMPLETE_TODO_ACTION, this.index)
     },
     remove: function (event) {
       event.preventDefault()
-
-      this.$root.$emit('removeTodo', this.index)
+      this.$store.dispatch(REMOVE_TODO_ACTION, this.index)
     }
   }
 }

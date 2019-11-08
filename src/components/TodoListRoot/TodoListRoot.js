@@ -7,14 +7,9 @@ export default {
     TodoControls,
     TodoTable
   },
-  data: function () {
-    return {
-      todos: []
+  computed: {
+    todos () {
+      return this.$store.state.todos
     }
-  },
-  mounted () {
-    this.$root.$on('removeTodo', (index) => {
-      this.todos.splice(index, 1)
-    })
   }
 }
