@@ -1,3 +1,6 @@
+export const SET_TODO_LIST = 'SET_TODO_LIST'
 export const ADD_TODO = 'ADD_TODO'
 export const REMOVE_TODO = 'REMOVE_TODO'
 export const COMPLETE_TODO = 'COMPLETE_TODO'
+export const LOAD_START = 'LOAD_START'
+export const LOAD_STOP = 'LOAD_STOP'
